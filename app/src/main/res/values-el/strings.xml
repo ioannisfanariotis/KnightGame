@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KnightGame</string>
+    <string name="welcome">Καλωσήρθατε!</string>
+    <string name="success">Επιτυχία!</string>
+    <string name="moves">Κινήσεις</string>
+    <string name="moves_number">Εδώ διαλέγετε τον μέγιστο αριθμό κινήσεων</string>
+    <string name="game_size">Εδώ διαλέγετε το μέγεθος της σκακιέρας (NxN)</string>
+    <string name="size">Μέγεθος</string>
+    <string name="lets_play">Ας παίξουμε!</string>
+    <string name="image">Εικόνα</string>
+    <string name="null_moves">Παρακαλώ εισάγετε κινήσεις!</string>
+    <string name="null_size">Παρακαλώ εισάγετε μέγεθος!</string>
+    <string name="size_rules">Το μέγεθος πρέπει να είναι από 6 μέχρι 16</string>
+    <string name="reset">Επαναφορά</string>
+    <string name="instructions">Δήλωσε θέση έναρξης/λήξης</string>
+    <string name="no_solution_found">Δεν βρέθηκε λύση…</string>
+</resources>

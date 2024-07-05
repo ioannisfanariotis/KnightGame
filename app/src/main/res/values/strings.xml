@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KnightGame</string>
+    <string name="welcome">Welcome!</string>
+    <string name="success">Success!</string>
+    <string name="moves">Moves</string>
+    <string name="moves_number">Here you choose the number of moves</string>
+    <string name="game_size">Here you choose the size of the chessboard (NxN)</string>
+    <string name="size">Size</string>
+    <string name="lets_play">Let\'s Play!</string>
+    <string name="image">Image</string>
+    <string name="null_moves">Please enter moves!</string>
+    <string name="null_size">Please enter size!</string>
+    <string name="size_rules">Size has to be from 6 to 16</string>
+    <string name="reset">Reset</string>
+    <string name="instructions">Mark starting/ending position</string>
+    <string name="no_solution_found">No solution found…</string>
+</resources>

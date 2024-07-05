@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    tools:context=".views.fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="@dimen/text_size_h2"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/global_spacing_25"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="@dimen/recycler_view_lists"
+        android:layout_height="@dimen/recycler_view_lists"
+        android:layout_margin="@dimen/global_spacing_25"
+        android:contentDescription="@string/image"
+        android:src="@drawable/knight_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <TextView
+        android:id="@+id/sizeLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_size"
+        android:textSize="@dimen/text_size_h5"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:layout_margin="@dimen/global_spacing_25"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/sizeLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size_rules"
+        android:textSize="@dimen/text_size_h5"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:layout_margin="@dimen/global_spacing_5"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/sizeLabel1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/scanContainer"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="@dimen/inner_spacing"
+        app:layout_constraintTop_toBottomOf="@+id/sizeLabel2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="@string/size"
+            android:inputType="numberDecimal"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/light_gray"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/movesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moves_number"
+        android:textSize="@dimen/text_size_h5"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:layout_margin="@dimen/global_spacing_25"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/scanContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/scanContainer2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="@dimen/inner_spacing"
+        app:layout_constraintTop_toBottomOf="@+id/movesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/moves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="@string/moves"
+            android:inputType="numberDecimal"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/light_gray"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/lets_play"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_h4"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/buttonMoreHeight"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/scanContainer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

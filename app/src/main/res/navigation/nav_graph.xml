@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.fantory.knightgame.views.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="Knight Game">
+        <action
+            android:id="@+id/action_HomeFragment_to_GameFragment"
+            app:destination="@id/GameFragment"
+            app:popUpTo="@id/GameFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.fantory.knightgame.views.fragments.GameFragment"
+        tools:layout="@layout/fragment_game"
+        android:label="{title}">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="size"
+            app:argType="integer" />
+        <argument
+            android:name="moves"
+            app:argType="integer" />
+    </fragment>
+</navigation>
